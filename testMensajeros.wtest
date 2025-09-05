@@ -1,6 +1,6 @@
 import example.*
 
-describe "testUno"{
+describe "Quienes y en que condiciones pueden enviar el paquete"{
     test "Paquete no pago mensajero Neo"{
         paquete.estadoDePaquete(false)
         assert.equals(false, laMatrix.dejaPasar(neo))
