@@ -1,21 +1,4 @@
-/** First Wollok example */
 
-/*
-retornar si el paquete puede ser entregado por alguno de sus empleados 
-
-Necesito poder mandarle un mensaje a la empresa para saber si puede enviar ese paquete
-	para entregar el paquete tiene que 
-	-Pagado puede variar
-	-Destino (Polimorfico)
-	-Armar las personas como objs
-
---Peso del vehiculo y la persona sin el paquete
-
---El paquete puede o no estar pago
-
-empresa (polimorfico empleado)
-
-*/
 object paquete {
   var estaPago = true
   //getter 
