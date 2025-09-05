@@ -1,0 +1,21 @@
+import example.*
+
+describe "Quienes y en que condiciones pueden enviar el paquete"{
+    test "Paquete no pago mensajero Neo"{
+        paquete.estadoDePaquete(false)
+        assert.equals(false, laMatrix.dejaPasar(neo))
+    }
+    test " Paquete pago mensajero Sara en camion"{
+        paquete.estadoDePaquete(true)
+        camion.cantidadDeAcoplado(1)
+        saraConnor.cambiarVehiculo(camion)
+        saraConnor.actualizarPeso(70)
+        assert.equals(false, puenteDeBrookyn.dejaPasar(saraConnor))
+    }
+    test "Paquete pago mensajero Sara en moto"{
+        paquete.estadoDePaquete(true)
+        saraConnor.cambiarVehiculo(moto)
+        saraConnor.actualizarPeso(70)
+        assert.equals(true, puenteDeBrookyn.dejaPasar(saraConnor))
+    }
+}
